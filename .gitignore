@@ -1,0 +1,16 @@
+
+
+# Tệp bí mật
+.env
+
+# Thư mục cache của Python
+__pycache__/
+*.pyc
+
+# Thư mục chứa các tệp tĩnh và media được thu thập
+staticfiles/
+media/
+
+# Cấu hình của các trình soạn thảo code
+.vscode/
+.idea/
