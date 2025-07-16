@@ -14,3 +14,4 @@ media/
 # Cấu hình của các trình soạn thảo code
 .vscode/
 .idea/
+venv/
