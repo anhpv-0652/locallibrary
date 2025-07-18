@@ -1,10 +1,8 @@
 {% extends "base_generic.html" %}
 {% load i18n %}
-
 {% block content %}
     <h1>{% trans "Local Library Home" %}</h1>
 
-    {# Dùng blocktrans cho các đoạn văn bản phức tạp có chứa biến hoặc thẻ HTML #}
     {% blocktrans %}
     <p>Welcome to Locallibrary, a website developed by <em>Mozilla Developer Network</em>!</p>
     {% endblocktrans %}

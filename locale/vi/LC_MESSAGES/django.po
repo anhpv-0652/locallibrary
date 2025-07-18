@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 10:59+0700\n"
+"POT-Creation-Date: 2025-07-17 15:50+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,39 +30,100 @@ msgstr "Tất cả sách"
 msgid "All authors"
 msgstr "Tất cả tác giả"
 
-#: .\catalog\templates\index.html:5
+#: .\catalog\templates\base_generic.html:44
+msgid "Previous"
+msgstr "Trước"
+
+#: .\catalog\templates\base_generic.html:48
+#, python-format
+msgid ""
+"\n"
+"                                Page %(current)s of %(total)s.\n"
+"                            "
+msgstr ""
+
+#: .\catalog\templates\base_generic.html:54
+msgid "Next"
+msgstr "Tiếp theo"
+
+#: .\catalog\templates\catalog\book_detail.html:6
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: .\catalog\templates\catalog\book_detail.html:8
+#, fuzzy
+#| msgid "All authors"
+msgid "Author"
+msgstr "Tất cả tác giả"
+
+#: .\catalog\templates\catalog\book_detail.html:9
+msgid "Summary:"
+msgstr "Tóm tắt"
+
+#: .\catalog\templates\catalog\book_detail.html:10
+msgid "ISBN:"
+msgstr "Mã ISBN"
+
+#: .\catalog\templates\catalog\book_detail.html:11
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: .\catalog\templates\catalog\book_detail.html:12
+msgid "Genre"
+msgstr "Thể loại"
+
+#: .\catalog\templates\catalog\book_detail.html:15
+#: .\catalog\templates\index.html:15
+msgid "Copies"
+msgstr "Bản copy"
+
+#: .\catalog\templates\catalog\book_detail.html:24
+msgid "Due to be returned"
+msgstr "Được trả lại"
+
+#: .\catalog\templates\catalog\book_detail.html:26
+msgid "Imprint"
+msgstr "Tài liệu tham khảo"
+
+#: .\catalog\templates\catalog\book_detail.html:27
+msgid "ID"
+msgstr "Mã ID"
+
+#: .\catalog\templates\catalog\book_list.html:15
+msgid "There are no books in the library."
+msgstr "Không có sách ở thư viện"
+
+#: .\catalog\templates\index.html:4
 msgid "Local Library Home"
 msgstr "Trang chủ Thư viện"
 
-#: .\catalog\templates\index.html:8
+#: .\catalog\templates\index.html:6
 msgid ""
 "\n"
 "    <p>Welcome to Locallibrary, a website developed by <em>Mozilla Developer "
 "Network</em>!</p>\n"
 "    "
-msgstr "Chào mừng đến với Thư viện, một trang web được phát triển bởi <em>Mozilla Developer Network</em>!"
+msgstr ""
+"Chào mừng đến với Thư viện, một trang web được phát triển bởi <em>Mozilla "
+"Developer Network</em>!"
 
-#: .\catalog\templates\index.html:12
+#: .\catalog\templates\index.html:10
 msgid "Dynamic content"
 msgstr "Nội dung động"
 
-#: .\catalog\templates\index.html:14
+#: .\catalog\templates\index.html:12
 msgid "The library has the following record counts:"
 msgstr "Thư viện có các số liệu thống kê sau:"
 
-#: .\catalog\templates\index.html:16
+#: .\catalog\templates\index.html:14
 msgid "Books"
 msgstr "Sách"
 
-#: .\catalog\templates\index.html:17
-msgid "Copies"
-msgstr "Bản copy"
-
-#: .\catalog\templates\index.html:18
+#: .\catalog\templates\index.html:16
 msgid "Copies available"
 msgstr "Bản có sẵn"
 
-#: .\catalog\templates\index.html:19
+#: .\catalog\templates\index.html:17
 #, fuzzy
 #| msgid "All authors"
 msgid "Authors"
