@@ -13,6 +13,9 @@ def index(request):
     
     # Đếm số tác giả
     num_authors = Author.objects.count()  # .all() được ngầm định ở đây
+    num_visits = request.session.get('num_visits', 1)
+    request.session['num_visits'] = num_visits + 1
+
 
     # 2. Gói dữ liệu vào một "túi" (context)
     context = {
