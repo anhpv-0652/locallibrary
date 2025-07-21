@@ -2,6 +2,8 @@ import uuid
 from django.db import models
 from django.urls import reverse
 from . import constants  # Import tệp constants
+from django.contrib.auth.models import User
+from datetime import date
 
 class Genre(models.Model):
     """Model representing a book genre."""
@@ -65,6 +67,8 @@ class BookInstance(models.Model):
     book = models.ForeignKey('Book', on_delete=models.RESTRICT)
     imprint = models.CharField(max_length=constants.IMPRINT_MAX_LENGTH)
     due_back = models.DateField(null=True, blank=True)
+    borrower = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+
 
 
 
@@ -78,6 +82,12 @@ class BookInstance(models.Model):
 
     class Meta:
         ordering = ['due_back']
-
+         permissions = (("can_see_all_books", "Can view all books in the catalog"),)
+        
     def __str__(self):
         return f'{self.id} ({self.book.title})'
+        
+    @property
+    def is_overdue(self):
+        return seft.due_back and date.today() > seft.due_back
+
