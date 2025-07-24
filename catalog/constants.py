@@ -1,3 +1,4 @@
+from datetime import date
 
 # Dành cho Model Genre
 GENRE_NAME_MAX_LENGTH = 200
