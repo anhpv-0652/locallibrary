@@ -70,12 +70,6 @@ def book_detail_view(request, primary_key):
 
 class MyView(LoginRequiredMixin, View):
     login_url = '/login/'
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    redirect_field_name = 'redirect_to'
-=======
-=======
->>>>>>> e97936a (Django tutorial part9: Workings with forms)
     redirect_field_name = 'redirect_to'
 
 @login_required
